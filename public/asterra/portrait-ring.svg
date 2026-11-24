@@ -1,0 +1,25 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="107.25" height="107.25" viewBox="0 0 107.25 107.25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ellipse 31">
+<circle cx="53.625" cy="53.625" r="48.75" fill="url(#paint0_radial_0_191)"/>
+<circle cx="53.625" cy="53.625" r="51.1875" stroke-width="4.875" stroke="#D9D9D9"/>
+<circle cx="53.625" cy="53.625" r="51.1875" stroke-width="4.875" stroke="url(#paint1_linear_0_191)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_191" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.5881 4.87499) rotate(52.5102) scale(122.879 270.9)">
+<stop stop-color="#E8E7FF"/>
+<stop offset="0.199209" stop-color="#A7A4E9"/>
+<stop offset="0.374325" stop-color="#5057CF"/>
+<stop offset="0.540022" stop-color="#14377A"/>
+<stop offset="0.730444" stop-color="#0A1C3D"/>
+<stop offset="0.89795"/>
+</radialGradient>
+<linearGradient id="paint1_linear_0_191" x1="50.2643" y1="4.95942" x2="70.4709" y2="98.2461" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E8E7FF"/>
+<stop offset="0.137237" stop-color="#A7A4E9"/>
+<stop offset="0.290881" stop-color="#5057CF"/>
+<stop offset="0.440636" stop-color="#14377A"/>
+<stop offset="0.593926" stop-color="#0A1C3D"/>
+<stop offset="0.907408"/>
+</linearGradient>
+</defs>
+</svg>
