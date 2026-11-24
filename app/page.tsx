@@ -15,12 +15,12 @@ const previews = [
 ];
 
 const team = [
-  { name: "Rafi", fullName: "Muhammad Rafi Aulia Rahmad", role: "Product Manager", file: "rafi", profile: "muhammadrafiauliarahmad" },
-  { name: "Ferdi", fullName: "Ferdiansyah Annora", role: "iOS Developer", file: "ferdi", profile: "ferdiansyah-annora-0595a71ab" },
-  { name: "Sendi", fullName: "Sendi Setiawan", role: "iOS Developer", file: "sendi", profile: "sendist" },
-  { name: "Zaki", fullName: "Ahmad Zaki", role: "iOS Developer", file: "zaki", profile: "ahmadzzaki" },
-  { name: "Fairuz", fullName: "Fairuz", role: "Product Designer", file: "fairuz", profile: "faairuzs" },
-  { name: "Bryan", fullName: "Christian Bryan Seputra", role: "Product Designer", file: "bryan", profile: "christianbryans" },
+  { name: "Rafi", fullName: "Muhammad Rafi Aulia Rahmad", role: "Product Manager", file: "rafi", profile: "muhammadrafiauliarahmad", email: "pvp.rafi@gmail.com" },
+  { name: "Ferdi", fullName: "Ferdiansyah Annora", role: "iOS Developer", file: "ferdi", profile: "ferdiansyah-annora-0595a71ab", email: "ferdiansyah.annora@gmail.com" },
+  { name: "Sendi", fullName: "Sendi Setiawan", role: "iOS Developer", file: "sendi", profile: "sendist", email: "sendisetiawan10902@gmail.com" },
+  { name: "Zaki", fullName: "Ahmad Zaki", role: "iOS Developer", file: "zaki", profile: "ahmadzzaki", email: "ahmdzzzki@gmail.com" },
+  { name: "Fairuz", fullName: "Fairuzsyah Naufal", role: "Product Designer", file: "fairuz", profile: "faairuzs", email: "faairuzs@gmail.com" },
+  { name: "Bryan", fullName: "Christian Bryan Seputra", role: "Product Designer", file: "bryan", profile: "christianbryans", email: "christianbryan263@gmail.com" },
 ];
 
 function BrandMark() {
@@ -98,13 +98,15 @@ export default function Home() {
             </div>
             <ul className="team-grid">
               {team.map((member) => (
-                <li key={member.file}>
-                  <a className="team-link" href={`https://www.linkedin.com/in/${member.profile}/`} aria-label={`${member.fullName}, ${member.role}, on LinkedIn`}>
-                    <span className="portrait">
-                      <Image src={`/team/${member.file}.png`} fill sizes="(max-width: 620px) 114px, 146px" alt="" />
-                    </span>
-                    <span className="team-name">{member.name}</span>
-                    <span className="team-role">{member.role}</span>
+                <li className="team-card" key={member.file}>
+                  <span className="portrait">
+                    <Image src={`/team/${member.file}.png`} fill sizes="(max-width: 620px) 114px, 146px" alt="" />
+                  </span>
+                  <span className="team-name">{member.name}</span>
+                  <span className="team-role">{member.role}</span>
+                  <a className="team-email" href={`mailto:${member.email}`}>{member.email}</a>
+                  <a className="team-linkedin" href={`https://www.linkedin.com/in/${member.profile}/`} aria-label={`View LinkedIn profile for ${member.fullName}`}>
+                    View LinkedIn <span aria-hidden="true">↗</span>
                   </a>
                 </li>
               ))}
